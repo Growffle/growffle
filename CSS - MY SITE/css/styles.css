@@ -1,0 +1,332 @@
+/*******************************Body Changes*********************************/
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.top-container {
+    background-color: #EAF6F6;
+    padding-top: 200px;
+    overflow: hidden;
+}
+
+.skill-row {
+    width: 50%;
+    display: inline-block;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.hr {
+    width: 4%;
+    border-width: 10px;
+    border-top: 0px;
+    border-style: dotted;
+    color: #EAF6F6;
+    margin: 100px auto 100px auto;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 30px 0px 40px 0px
+}
+
+bottom-container:hover {
+    color: red;
+}
+
+/*******************************Image Changes*********************************/
+.middle-cloud {
+    position: absolute;
+    right: 500px;
+    top: 150px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 500px;
+}
+
+.guitar-image {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.three-d-image {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+/*******************************Paragraph Changes*********************************/
+h1 {
+    font-family: "DotGothic16", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #66BFBF;
+    line-height: 4.6;
+}
+
+h2 {
+    font-size: 2.22rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3 {
+    color: #11999E;
+}
+
+.contact-me {
+    margin: 100px;
+}
+
+.queries {
+    margin-bottom: 70px;
+}
+
+a {
+    color: #11999E;
+}
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    text-shadow: 0px 0px 7px #666666;
+    font-family: Arial;
+    color: #ebe4df;
+    font-size: 29px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.anchors {
+    margin: auto;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.last-text {
+    color: white;
+    font-size: small;
+}
+
+/*******************************Mobile Optimization*********************************/
+
+@media only screen and (max-device-width: 480px) {
+
+    .top-container {
+        height: 90.5vh;
+    }
+
+    .mountain {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .main-heading {
+        position: relative;
+        text-align: center;
+        margin: 50% 0 0 0;
+    }
+
+    .skill-row {
+        width: 90%;
+    }
+
+    .bottom-cloud {
+        bottom: 30%;
+        left: 70%;
+        animation: movebottomcloud 80s ease-in-out infinite;
+    }
+
+    @keyframes movebottomcloud {
+        0% {
+            left: 70%;
+        }
+
+        50% {
+            left: 10%;
+        }
+
+        100% {
+            left: 70%;
+        }
+    }
+
+    .middle-cloud {
+        top: 20%;
+        right: 10%;
+        animation: movemiddlecloud 60s ease-in-out infinite;
+    }
+
+    @keyframes movemiddlecloud {
+        0% {
+            right: 10%;
+        }
+
+        50% {
+            right: 80%;
+        }
+
+        100% {
+            right: 10%;
+        }
+    }
+
+    .top-cloud {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        animation: movetopcloud 50s ease-in-out infinite;
+    }
+
+    @keyframes movetopcloud {
+        0% {
+            left: 10%;
+        }
+
+        50% {
+            left: 80%;
+        }
+
+        100% {
+            left: 10%;
+        }
+    }
+
+    .middle-cloud-2 {
+        position: absolute;
+        left: 15%;
+        bottom: 40%;
+        animation: movemiddle2Cloud 20s ease-in-out infinite;
+    }
+
+    @keyframes movemiddle2Cloud {
+        0% {
+            left: 10%;
+        }
+
+        50% {
+            left: 80%;
+        }
+
+        100% {
+            left: 10%;
+        }
+    }
+
+    .para-me{
+        font-size: 32px;
+    }
+
+    .skill-row{
+        width: 95%;
+    }
+
+    .Modeling{
+        text-align: right;
+    }
+
+    h3{
+        font-size: 33px;
+    }
+
+    .footer-link{
+        font-size: 45px;
+        position: relative;
+    }
+
+    .reddit{
+        animation: reddit 3s linear infinite;
+    }
+
+    @keyframes reddit {
+        0% {
+            color: white;
+        }
+        50% {
+            color: rgb(3, 84, 138);
+        }
+        100% {
+            color: white;
+        }
+    }
+
+    .twitter{
+        animation: twitter 4s linear infinite;
+    }
+
+    @keyframes twitter {
+        0% {
+            color: white;
+        }
+        50% {
+            color: rgb(3, 84, 138);
+        }
+        100% {
+            color: white;
+        }
+    }
+
+    .instagram{
+        animation: instagram 5s linear infinite;
+    }
+
+    @keyframes instagram {
+        0% {
+            color: white;
+        }
+        50% {
+            color: rgb(3, 84, 138);
+        }
+        100% {
+            color: white;
+        }
+    }
+
+
+    .last-text{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-device-width: 480px){
+    .middle-cloud-2{
+        display: none;
+    }
+
+    .top-cloud{
+        display: none;
+    }
+}
+
+
+/*******************************Tablet Optimization*********************************/
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 900px) {
+
+    .skill-row {
+        background-color: red;
+    }
+
+}
